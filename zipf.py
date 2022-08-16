@@ -34,7 +34,7 @@ print(contaPalavra)
 pd.set_option('display.max_rows', None) # Para visualizar todas as linhas do Dataframe
 df = pd.DataFrame(list(contaPalavra.items()), columns=['Palavra', 'Quantidade']) # Criando um Dataframe
 df = df.sort_values(by='Quantidade', ascending=False, ignore_index=True) # Ordenando de forma decrescente o Dataframe pela coluna Quantidade 
-df = df[df['Quantidade']>50] # Filtrando a coluna Quantidade para valores maiores que 9
+df = df[df['Quantidade']>50] # Filtrando a coluna Quantidade para valores maiores que 50
 
 sns.set_theme(style='darkgrid') # Definindo a cor de fundo
 plt.figure(figsize=(24,10)) # Definindo o tamanho do Dataframe
